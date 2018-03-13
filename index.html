@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Disciplinas</title>
+</head>
+<body>
+	<header>
+		<nav class="nav navbar-inverse">
+			<div class="container texto-botao">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Plataforma EAD (AVA)</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#alunos" title="Alunos">Alunos</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li id="diminuir-fonte"><a title="Diminuir Fonte" alt="Diminuir">A-</a></li>
+						<li id="aumentar-fonte"><a title="Aumentar Fonte" alt="Aumentar">A+</a></li>
+			      	</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="disciplina-baner" id="dynamicFont">
+				<h1>Trabalho de Conclusão de Curso Mbe em Engenharia de Produção e Serviços</h1>
+				<p>Turma: 12345</p>
+				<p>Disciplina: 45678</p>
+				<p> Unidade: Canoas </p>
+			</div>
+		</div>
+	</header>
+
+	<section class="container" id="alunos">
+		<h2> Alunos </h2>
+		
+		<div id="dynamicFont">
+			<div class="panel panel-default">	
+				<div class="panel-heading" title="Toque para expandir dados do aluno" data-toggle="collapse" data-target="#primeiro-aluno">
+					<div class="media-left">
+						<a href="#primeiro-aluno">
+							<img class="media-object imagem-aluno" src="img/user.png" alt="Imagem Aluno">
+						</a>
+					</div>
+					<div class="media-body corpo-texto-aluno">
+						<h4 class="media-heading">Alexsandro Bola</h4>
+						<p>37444441</p>
+					</div>
+				</div>
+				<div class="panel-body collapse" id="primeiro-aluno">
+
+					<div class="row">
+						<div class="col-sm-8"> 
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Percentual de Conclusão:</b></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<p>80%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Último Acesso:</b></p>
+									<p>05/03/2018 às 08:31<p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G1</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Primeira atividade Objetiva</td>
+								<td>3</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Segunda atividade Objetiva</td>
+								<td>3</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho parcial</td>
+								<td>4</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Nota final G1: 4</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G2</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Atividade objetiva</td>
+								<td>2</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Avaliação do objetivo</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Avaliação das metas</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho final</td>
+								<td>6</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<th>Nota final G2: 5.6</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-4"> 
+					  	<h4><b>Nota final = 5.3</b></h4> 
+					  </div>
+					  <div class="col-sm-8">
+					  	<button type="button" class="btn btn-primary texto-botao" data-toggle="modal" data-target="#modal-aluno-1" title="Abrir caixa de mensagem para o aluno">
+						  Mensagem
+						</button>
+					  </div>
+					</div>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-aluno-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Fechar caixa de mensagem"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mensagem</h4>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="comment" placeholder="Digite aqui a mensagem..."></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar mensagem">Cancelar</button>
+									<button type="button" class="btn btn-success" title="Enviar mensagem">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">	
+				<div class="panel-heading" title="Toque para expandir dados do aluno" data-toggle="collapse" data-target="#segundo-aluno">
+					<div class="media-left">
+						<a href="#segundo-aluno">
+							<img class="media-object imagem-aluno" src="img/user.png" alt="Imagem Aluno">
+						</a>
+					</div>
+					<div class="media-body corpo-texto-aluno">
+						<h4 class="media-heading">Daniel Cezar</h4>
+						<p>31965220</p>
+					</div>
+				</div>
+				<div class="panel-body collapse" id="segundo-aluno">
+
+					<div class="row">
+						<div class="col-sm-8"> 
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Percentual de Conclusão:</b></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<p>80%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Último Acesso:</b></p>
+									<p>05/03/2018 às 08:31<p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G1</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Primeira atividade Objetiva</td>
+								<td>3</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Segunda atividade Objetiva</td>
+								<td>3</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho parcial</td>
+								<td>4</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Nota final G1: 4</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G2</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Atividade objetiva</td>
+								<td>2</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Avaliação do objetivo</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Avaliação das metas</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho final</td>
+								<td>6</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<th>Nota final G2: 5.6</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-4"> 
+					  	<h4><b>Nota final = 5.3</b></h4> 
+					  </div>
+					  <div class="col-sm-8">
+					  	<button type="button" class="btn btn-primary texto-botao" data-toggle="modal" data-target="#modal-aluno-2" title="Abrir caixa de mensagem para o aluno">
+						  Mensagem
+						</button>
+					  </div>
+					</div>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-aluno-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Fechar caixa de mensagem"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mensagem</h4>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="comment" placeholder="Digite aqui a mensagem..."></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar mensagem">Cancelar</button>
+									<button type="button" class="btn btn-success" title="Enviar mensagem">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">	
+				<div class="panel-heading" title="Toque para expandir dados do aluno" data-toggle="collapse" data-target="#terceiro-aluno">
+					<div class="media-left">
+						<a href="#terceiro-aluno">
+							<img class="media-object imagem-aluno" src="img/user.png" alt="Imagem Aluno">
+						</a>
+					</div>
+					<div class="media-body corpo-texto-aluno">
+						<h4 class="media-heading">Deivid Rocha</h4>
+						<p>75709510</p>
+					</div>
+				</div>
+				<div class="panel-body collapse" id="terceiro-aluno">
+
+					<div class="row">
+						<div class="col-sm-8"> 
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Percentual de Conclusão:</b></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<p>80%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Último Acesso:</b></p>
+									<p>05/03/2018 às 08:31<p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G1</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Primeira atividade Objetiva</td>
+								<td>3</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Segunda atividade Objetiva</td>
+								<td>3</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho parcial</td>
+								<td>4</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Nota final G1: 4</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G2</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Atividade objetiva</td>
+								<td>2</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Avaliação do objetivo</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Avaliação das metas</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho final</td>
+								<td>6</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<th>Nota final G2: 5.6</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-4"> 
+					  	<h4><b>Nota final = 5.3</b></h4> 
+					  </div>
+					  <div class="col-sm-8">
+					  	<button type="button" class="btn btn-primary texto-botao" data-toggle="modal" data-target="#modal-aluno-3" title="Abrir caixa de mensagem para o aluno">
+						  Mensagem
+						</button>
+					  </div>
+					</div>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-aluno-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Fechar caixa de mensagem"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mensagem</h4>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="comment" placeholder="Digite aqui a mensagem..."></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar mensagem">Cancelar</button>
+									<button type="button" class="btn btn-success" title="Enviar mensagem">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">	
+				<div class="panel-heading" title="Toque para expandir dados do aluno" data-toggle="collapse" data-target="#quarto-aluno">
+					<div class="media-left">
+						<a href="#quarto-aluno">
+							<img class="media-object imagem-aluno" src="img/user.png" alt="Imagem Aluno">
+						</a>
+					</div>
+					<div class="media-body corpo-texto-aluno">
+						<h4 class="media-heading">Deyvid Silva dos Dias Nunes</h4>
+						<p>12346664315</p>
+					</div>
+				</div>
+				<div class="panel-body collapse" id="quarto-aluno">
+
+					<div class="row">
+						<div class="col-sm-8"> 
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Percentual de Conclusão:</b></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<p>80%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Último Acesso:</b></p>
+									<p>05/03/2018 às 08:31<p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G1</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Primeira atividade Objetiva</td>
+								<td>3</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Segunda atividade Objetiva</td>
+								<td>3</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho parcial</td>
+								<td>4</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Nota final G1: 4</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G2</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Atividade objetiva</td>
+								<td>2</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Avaliação do objetivo</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Avaliação das metas</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho final</td>
+								<td>6</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<th>Nota final G2: 5.6</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-4"> 
+					  	<h4><b>Nota final = 5.3</b></h4> 
+					  </div>
+					  <div class="col-sm-8">
+					  	<button type="button" class="btn btn-primary texto-botao" data-toggle="modal" data-target="#modal-aluno-4" title="Abrir caixa de mensagem para o aluno">
+						  Mensagem
+						</button>
+					  </div>
+					</div>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-aluno-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Fechar caixa de mensagem"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mensagem</h4>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="comment" placeholder="Digite aqui a mensagem..."></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar mensagem">Cancelar</button>
+									<button type="button" class="btn btn-success" title="Enviar mensagem">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">	
+				<div class="panel-heading" title="Toque para expandir dados do aluno" data-toggle="collapse" data-target="#quinto-aluno">
+					<div class="media-left">
+						<a href="#quinto-aluno">
+							<img class="media-object imagem-aluno" src="img/user.png" alt="Imagem Aluno">
+						</a>
+					</div>
+					<div class="media-body corpo-texto-aluno">
+						<h4 class="media-heading">Ana Paula Lins</h4>
+						<p>10104567</p>
+					</div>
+				</div>
+				<div class="panel-body collapse" id="quinto-aluno">
+
+					<div class="row">
+						<div class="col-sm-8"> 
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Percentual de Conclusão:</b></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<p>80%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<p><b>Último Acesso:</b></p>
+									<p>05/03/2018 às 08:31<p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G1</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Primeira atividade Objetiva</td>
+								<td>3</td> 
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Segunda atividade Objetiva</td>
+								<td>3</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho parcial</td>
+								<td>4</td> 
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Nota final G1: 4</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Atividades G2</th>
+								<th>Valor</th> 
+								<th>Nota</th>
+							</tr>
+							<tr>
+								<td>Atividade objetiva</td>
+								<td>2</td> 
+								<td>Não Realizada</td>
+							</tr>
+							<tr>
+								<td>Avaliação do objetivo</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Avaliação das metas</td>
+								<td>1</td> 
+								<td>0.8</td>
+							</tr>
+							<tr>
+								<td>Entrega do trabalho final</td>
+								<td>6</td> 
+								<td>4</td>
+							</tr>
+							<tr>
+								<th>Nota final G2: 5.6</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-4"> 
+					  	<h4><b>Nota final = 5.3</b></h4> 
+					  </div>
+					  <div class="col-sm-8">
+					  	<button type="button" class="btn btn-primary texto-botao" data-toggle="modal" data-target="#modal-aluno-5" title="Abrir caixa de mensagem para o aluno">
+						  Mensagem
+						</button>
+					  </div>
+					</div>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="modal-aluno-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Fechar caixa de mensagem"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mensagem</h4>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="comment" placeholder="Digite aqui a mensagem..."></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal" title="Cancelar mensagem">Cancelar</button>
+									<button type="button" class="btn btn-success" title="Enviar mensagem">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/navbar-animation-fix.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/font-size-acessibility.js"></script>
+</body>
+</html>
